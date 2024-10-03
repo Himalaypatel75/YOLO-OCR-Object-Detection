@@ -9,10 +9,10 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Settings
-video_source = os.getenv('VIDEO_SOURCE')  # Webcam or video file path
+video_source = os.getenv('VIDEO_SOURCE_3')  # Webcam or video file path
 fps = 5  # Frames per second
-camera_id = 2
-ip_address = f"ws://127.0.0.1:8080?camera_id={camera_id}"   # WebSocket server address
+camera_id = 3
+ip_address = f"ws://127.0.0.1:8081?camera_id={camera_id}"   # WebSocket server address
 
 async def send_frame(websocket, frame):
     try:
